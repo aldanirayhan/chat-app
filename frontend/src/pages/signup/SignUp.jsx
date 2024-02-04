@@ -77,7 +77,9 @@ const SignUp = () => {
 
 
           <div>
-            <button className="w-full max-w-xs btn btn-sm mt-6 text-white hover:bg-yellow-500 hover:text-black">Sign Up</button>
+            <button className="w-full max-w-xs btn btn-sm mt-6 text-white hover:bg-yellow-500 hover:text-black" disabled={loading}>
+              {loading ? <span className="loading loading-spinner"></span> : "Sign Up"}
+            </button>
           </div>
 
           <Link to={"/login"} className="text-sm hover:underline hover:text-yellow-400 mt-2 inline-block">Already have an account?</Link>

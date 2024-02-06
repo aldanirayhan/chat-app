@@ -26,7 +26,7 @@ const Login = () => {
             <label className="label p-2">
               <span className="text-base label-text text-gray-100">Username</span>
             </label>
-            <input type="text" placeholder="Enter username" class="input input-bordered input-warning w-full max-w-xs"
+            <input type="text" placeholder="Enter username" className="input input-bordered input-warning w-full max-w-xs"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             />
@@ -36,7 +36,7 @@ const Login = () => {
             <label className="label">
               <span className="text-base label-text text-gray-100">Password</span>
             </label>
-            <input type="password" placeholder="Enter password" class="input input-bordered input-warning w-full max-w-xs"
+            <input type="password" placeholder="Enter password" className="input input-bordered input-warning w-full max-w-xs"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             />
